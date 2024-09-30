@@ -1,10 +1,10 @@
-num = prompt("Escribe un numero");
+num = prompt("Escribe un numero").trim();
 
 if (Number(num))
 {
     alert("Es un numero");
 }
-else if (isNaN(num))
+else if (isNaN(num) || num === "")
 {
     alert("No es un numero");
 }
